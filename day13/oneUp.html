@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>지역변수의 유효 범휘(scoope)</title>
+</head>
+<body>
+    <h3>지역 변수의 유효 범휘</h3>
+    <script>
+        // oneUp함수정의
+        // 블럭을 빠져나오면 소멸
+        function oneUp(){
+            let x = 1;    //지역변수
+            x += 1;  //x++
+            return x;
+        }
+
+        // let num = oneUp(); //1번 호출
+        // document.write(num + '<br>');
+        console.log(oneUp()); //2
+        console.log(oneUp()); //2
+
+        document.write(x);
+
+    </script>
+</body>
+</html>
