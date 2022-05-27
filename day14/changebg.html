@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>배경색 바꾸기</title>
     <link rel="stylesheet" href="./css/bgcolore.css">
+    <style>
+        span{color: #fff;}
+    </style>
 </head>
 <body>
     <div class="menu">
@@ -15,12 +18,14 @@
             <li><a href="#" onclick="changeBg('pink')">pink</a></li>
         </ul>
     </div>
-    <div class="box" id="rect"></div>
+    <div class="box" id="rect"><span>안녕하세요</span></div>
 
     <script>
+        // 매개가 변수인 함수
         function changeBg(color){
             let rect = document.getElementById("rect")
             rect.style.backgroundColor = color;
+            rect.style.fontSize = size;
         }
 
     </script>
