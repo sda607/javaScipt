@@ -1,4 +1,4 @@
-  // 변수선언
+// 변수선언
   let member = prompt("전체 응모자 수 :"); //응모자 수
   let winner = new Array(5); //당첨자 수 
   
@@ -21,7 +21,7 @@
                 }
             }
         }
-
+            
         //출력
         for(var i = 0; i < winner.length; i++){  
         document.write(winner[i] + "번, ")

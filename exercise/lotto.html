@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <section>
+        <h1>로또 추첨 번호</h1>
+    </section>
+
+    <script>
+        let member = prompt(추첨);
+        let winner = new Array(45);
+
+        if(member == null){
+
+        }else{
+        document.write("로또 추첨 번호" + member + "번");
+        }
+        for(var i = 0; i < winner.length; i++ ){
+           let pickedOne = Math.floor(Math.random()*member);
+           winner[i] = pickedOne;
+        }
+
+        for(var i = 0; i < winner.length; i++){
+
+        }
+
+
+
+
+    </script>
+</body>
+</html>
