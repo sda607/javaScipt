@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 추가</title>
+    <style>
+        div{
+            position: fixed;
+            width: 200px; height: 200px;
+            background: #718c00;
+        }
+        
+    </style>
+    <script>
+        function createEle(){
+            let bt = document.getElementById('bt');
+            function popup(){
+                let div = document.createElement('div');
+                let a = document.createElement('a');
+                let txt = document.createElement('아이콕스');
+                a.appendChild(txt);
+                a.setAttribute('href', 'https://www.naver.com/')
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <button id="bt">요소생성</button>
+    <div id="popup" class="m1">내용</div>
+    <script>
+        let popup = document.getElementById('popup');
+        console.log(popup.getAttribute('class'));
+    </script>
+</body>
+</html>

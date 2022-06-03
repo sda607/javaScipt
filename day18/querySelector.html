@@ -6,12 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>요소를 직업 선택하는 메서드t</title>
     <script>
-        window.onload = function(){
-            let list1 = document.querySelector('#box1 > ul > li');
-            let list2 = document.querySelectorAll('#box2 > ul > li');
+        window.onload = function() {
+            var list1 = document.querySelector('#box1 > ul > li');
+            var list2 = document.querySelectorAll('#box2 > ul > li');
             console.log(list1);
-            console.log(list2);
-        }
+            console.log(list2);        
+            list1.style.background = "#ff6600";
+            // list2[0].style.background = "#ccc";
+            //item()함수 사용
+            list2.item(0).style.background = "#ddd";
+        };
     </script>
     
 </head>
