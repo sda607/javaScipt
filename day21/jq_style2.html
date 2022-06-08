@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css 함수</title>
+    <script src="./js/jquery-3.6.0.js"></script>
+    <style>
+        *{margin: 0; padding: 0;}
+        div{padding: 20px; margin: 20px; background: #ff6600;}
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("div").width(150).height(150);
+            console.log("width " + $("div").width());
+            console.log("width " + $("div").height());
+            console.log("innerwidth " + $("div").innerWidth());
+        });    
+    </script>
+</head>
+<body>
+    <div>내용</div>
+</body>
+</html>
