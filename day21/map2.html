@@ -13,15 +13,15 @@
     <script>
         //객체를 가지는 배열
         const persons = [
-            {firstname : "Jobs", lastname : "steve"},
-            {firstname : "그램", lastname : "장"},
-            {firstname : "HGss", lastname : "Bill"},
+            {firstname : "Jobs", lastname : "Steve"},
+            {firstname : "그래", lastname : "장"},
+            {firstname : "Gates", lastname : "Bill"},
         ]
 
         let people = persons.map(getFullName);
 
         function getFullName(item){
-            return [item.lastname, item.firstname].join(" ");
+            return [item.lastname, item.firstname].join(" "); 
         }
         document.getElementById("demo").innerHTML = people;
 

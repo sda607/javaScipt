@@ -13,11 +13,13 @@
     </style>
     <script>
         $(document).ready(function(){
-            //offset() -브라우저기준
-            //postion - 부모 기준
-         console.log($("#inner").offset().left);
-         console.log($("#inner").offset().top);
-        });    
+            //offset() - 브라우저기준(html)
+            //position() - 부모 기준
+            console.log($("#inner").offset().top);
+            console.log($("#inner").offset().left);
+            console.log($("#inner").position().top);
+            console.log($("#inner").position().left);
+        });
     </script>
 </head>
 <body>

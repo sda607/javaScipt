@@ -7,7 +7,13 @@
     <title>text() 함수</title>
     <script src="./js/jquery-3.6.0.js"></script>
     <script>
-      
+        $(document).ready(function() {
+            console.log($("#m1").html());       
+            $("#m1").html("<em>html</em>");
+            $("#m2 > div").html(function() {
+                return "<strong>" + $(this).text() + "</strong>";
+            });
+        });
     </script>
 </head>
 <body>

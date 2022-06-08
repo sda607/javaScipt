@@ -7,17 +7,20 @@
     <title>주요 탐색 함수</title>
     <script src="./js/jquery-3.6.0.js"></script>
     <script>
-        $(document).ready(function(){
-            //childern() - 자식 요소 선택
+         $(document).ready(function(){
+            //children() - 자식 요소 선택
             //parent() - 부모 요소
-            //next( ) - 다음 요소
-            //filter() - 해당 요소
-            $("#m1").children().css("border", "2px solid red");
-            $("#m2").children().children("span").css("border", "2px solid orange");
-            $("#m2 span").parent().css("border", "2px solid black");
-            $("#m4 > span.m").nextUntil("em").css("border", "2px solid green");
-            $("#m5 > span").filter(".m").css("border", "2px solid blue");
-        })
+            //next() - 다음 요소
+            //filter() - 해당 요소(클래스, 아이디) 선택
+            $("#m1").children().css("border", "3px solid red");
+            $("#m2").children().children("span").css("border", "3px solid orange");
+            $("#m2 span").parent().css("border", "3px solid black");
+            $("#m4 > span.m").nextUntil("em").css("border", "3px solid green");
+            $("#m5 > span").filter(".m").css("border", "3px solid blue");
+            $("#m6 > div").has("span").css("border", "3px solid navy");
+            // $("#m6 > div").has("span").next().css("border", "3px solid yellow");
+            $("#m6 div.d1").next().css("border", "3px solid pink");
+        });
 
     </script>
 </head>
@@ -26,19 +29,21 @@
         <a href="#">내용1_1</a><span>내용1_2</span>
     </div>
     <div id="m2">
-        <div><a href="#">내용2_1</a><span>내용2_2</span></div>
+        <div>
+            <a href="#">내용2_1</a><span>내용2_2</span>
+        </div>
     </div>
     <div id="m3">
-       <div><span>내용3_1</span></div>
+        <div><span>내용3_1</span></div>
     </div>
     <div id="m4">
-        <span class = "m">내용4_1</span><span>내용4_2</span><span>내용4_3</span><em>내용4_4</em>
+        <span class="m">내용4_1</span><span>내용4_2</span><span>내용4_3</span><em>내용4_4</em>
     </div>
     <div id="m5">
-        <span class="m">내용5_1</a><span>내용5_2</span><span>내용5_3</span>
+        <span class="m">내용5_1</span><span>내용5_2</span><span>내용5_3</span>
     </div>
     <div id="m6">
-        <div><span>내용6-1</span></div>
+        <div class="d1"><span>내용6_1</span></div>
         <div>내용6_2</div>
     </div>
 </body>
