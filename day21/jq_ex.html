@@ -11,7 +11,8 @@
             $("h2").css("color", "#00f");
             $("#intro").css("background", "greenyellow");
             $(".info").css({"border" : "2px solid #ccc"})
-            $(".info").append("<p>나는 서울에 살아요</p>");
+            // $(".info").append("<p>나는 서울에 살아요</p>");// 마지막 자식요소
+            $(".info").prepend("<p>나는 서울에 살아요</p>"); // 첫번`째 자식요소
             $(".pic").html("<img src='./img/cat.jpg'>")
             $("#msg").text("오늘도 좋은 하루");
             $("#msg").css({"color" : "red", "font-weight" : "blod"})

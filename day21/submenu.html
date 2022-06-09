@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>서브메뉴 만들기</title>
     <style>
-        .wrap .ul1{display: none; }
+        .wrap .ul1, .ul2{display: none; }
         .wrap a{text-decoration: none;}
     </style>
     <script src="./js/jquery-3.6.0.js"></script>
@@ -16,13 +16,26 @@
             $(".btn1 a").on("mouseover", function(){
                 let a = $(this); //이벤트가 일어난 대상
                 a.parent().next().show(); //ul1 이 보임
-                // a.css("background", "pink");
+                a.css("background", "pink");
+                // $(".ul1").css("display", "block");
             })
-            $(".btn1 a").on("mouseover", function(){
+            $(".btn1 a").on("mouseout", function(){
                 let a = $(this); //이벤트가 일어난 대상
                 a.parent().next().hide();
                 // a.css("background", "white");
             })
+
+            //학교생활
+            $(".btn2 a").on("click", function(){
+                // let a = $(this); //이벤트가 일어난 대상
+                // a.parent().next().show();
+                $(".ul2").css("display", "block");
+            });
+            $(".btn2 a").on("mouseout", function(){
+                // let a = $(this); //이벤트가 일어난 대상
+                // a.parent().next().show();
+                $(".ul2").css("display", "none");
+            });
         });
 
     </script>
@@ -37,14 +50,14 @@
             <li>학교연혁</li>
             <li>찾아오시는길</li>
         </ul>
-        <!-- <p class="btn2">
+        <p class="btn2">
             <a href="#">학교생활</a>
         </p>
         <ul class="ul2">
             <li>공지사항</li>
             <li>가정통신문</li>
             <li>공지사항</li>
-        </ul> -->
+        </ul>
     </div>
 </body>
 </html>
