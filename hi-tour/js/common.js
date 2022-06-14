@@ -1,25 +1,90 @@
 $(document).ready( function() {
+	// let isOver1 = false; //상위메뉴(마우스 오버 되면 : true/)
+	// let isover2 = false; //하위메뉴(마우스 오버 되면 : true/)
+
+	let isOver1 = [false, false, false, false];
+	let isOver2 = [false, false, false, false];
+
+
 
 	//fadeOut() 시간 설정
 	function goHide(){
 		for(var i = 1; i<=4; i++){
-			$(".gnb_depth2_" + i).fadeOut("fast");
+			if(!isOver1[i] && !isover2[0]){ //상위, 하위 메뉴가 닿았을때
+				$(".gnb_depth2_" + (i+1)).fadeOut("fast");
+			}
 		}
 	}
-	//상단 메뉴 마우스오버, 탭 클릭 코드
+	//상위메뉴
 	$(".openAll1").mouseover(function(){
 		// 서브메뉴 나타나기(header의 너비기 800보다 클때)
 		if(parseInt($("header").css("width"))> 800)
 			$(".gnb_depth2_1").fadeIn("fast");
+			isOver1[0] = true;
 	}).focus(function(){
 		if(parseInt($("header").css("width"))> 800)
 			$(".gnb_depth2_1").fadeIn("fast");
+			isOver1[0] = true;
 	}).mouseout(function(){
 		// $(".gnb_depth2_1").fadeOut("fast");
 		setTimeout(goHide, 500); //0.5초
+		isOver1[0] = false;
 	}).blur(function(){
 		setTimeout(goHide, 500);
-	})
+		isOver1[0] = false;
+	});
+
+	//하위메뉴
+	$(".gnb_depth2_1").mouseover(function(){
+		isover2[0] = ture;
+	}).focus(function(){
+		isOver2[0] = true;
+	}).mouseover(function(){
+		isOver2[0] = false;
+		setTimeout(goHide, 500);
+	}).blur(function(){
+		setTimeout(goHide, 500);
+		isover2[0] = false;
+	});
+	//하위메뉴
+	$(".gnb_depth2_2").mouseover(function(){
+		isover2[0] = ture;
+	}).focus(function(){
+		isOver2[0] = true;
+	}).mouseover(function(){
+		isOver2[0] = false;
+		setTimeout(goHide, 500);
+	}).blur(function(){
+		setTimeout(goHide, 500);
+		isover2[0] = false;
+	});
+	//하위메뉴
+	$(".gnb_depth2_3").mouseover(function(){
+		isover2[0] = ture;
+	}).focus(function(){
+		isOver2[0] = true;
+	}).mouseover(function(){
+		isOver2[0] = false;
+		setTimeout(goHide, 500);
+	}).blur(function(){
+		setTimeout(goHide, 500);
+		isover2[0] = false;
+	});
+	//하위메뉴
+	$(".gnb_depth2_4").mouseover(function(){
+		isover2[0] = ture;
+	}).focus(function(){
+		isOver2[0] = true;
+	}).mouseover(function(){
+		isOver2[0] = false;
+		setTimeout(goHide, 500);
+	}).blur(function(){
+		setTimeout(goHide, 500);
+		isover2[0]= false;
+	});
+
+
+
 
 	$(".openAll2").mouseover(function(){
 		// 서브메뉴 나타나기(header의 너비기 800보다 클때)
@@ -33,7 +98,7 @@ $(document).ready( function() {
 		setTimeout(goHide, 500);
 	}).blur(function(){
 		setTimeout(goHide, 500);
-	})
+	});
 
 	$(".openAll3").mouseover(function(){
 		// 서브메뉴 나타나기(header의 너비기 800보다 클때)
@@ -47,7 +112,7 @@ $(document).ready( function() {
 		setTimeout(goHide, 500);
 	}).blur(function(){
 		setTimeout(goHide, 500);
-	})
+	});
 
 	$(".openAll4").mouseover(function(){
 		// 서브메뉴 나타나기(header의 너비기 800보다 클때)
@@ -61,7 +126,7 @@ $(document).ready( function() {
 		setTimeout(goHide, 500);
 	}).blur(function(){
 		setTimeout(goHide, 500);
-	})
+	});
 
 	
 
