@@ -230,16 +230,24 @@ footer .foot_area .snslink li + li + li a {background-image:url(../img/ico_insta
 
 /* popup_base */
 .popup_base {position:absolute; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,0.7); z-index:200; display:none;}
-.popup_base .pop_content {position:relative; width:580px; margin:200px auto 0; box-sizing:border-box; background:#fff;}
+.popup_base .pop_content {position:relative; width:580px; 
+	margin:200px auto 0; box-sizing:border-box; background:#fff;}
 .pop_content .btn_xpop {position:absolute; right:0; top:-55px;}
-.pop_content .btn_xpop a {display:block; width:45px; height:45px; text-align:center; text-indent:-9999px; overflow:hidden; background:url(../img/btn_xpop.png) no-repeat; background-size:45px;}
+.pop_content .btn_xpop a {display:block; width:45px; height:45px; 
+	text-align:center; text-indent:-9999px; overflow:hidden; 
+	background:url(../img/btn_xpop.png) no-repeat; 
+	background-size:45px;}
 .pop_content .pop_list li {padding:36px; text-align:center;}
 .pop_content .pop_list li + li {background:#f4f0e9;}
 .pop_content .pop_list li + li + li {background:#fff;}
-.pop_content .pop_list li h2.tit_pop {padding:10px 0 24px; font-weight:bold; font-size:30px; letter-spacing:-2px;}
+.pop_content .pop_list li h2.tit_pop {padding:10px 0 24px;
+	 font-weight:bold; font-size:30px; letter-spacing:-2px;}
 .pop_content .pop_list li img.pop_img {width:100%;}
 .pop_content .pop_list li .pop_txt {padding-top:15px}
-.pop_content .pop_list li .pop_txt p {padding-top:10px; line-height:1.8; font-size:17px; width:95%; margin:0 auto; overflow:hidden; word-break:keep-all; letter-spacing:-2px;}
+.pop_content .pop_list li .pop_txt p {padding-top:10px; 
+	line-height:1.8; font-size:17px; width:95%;
+	 margin:0 auto; overflow:hidden; word-break:keep-all; 
+	 letter-spacing:-2px;}
 
 /* sub_page */
 .location_area {height:445px; background:url(../img/img_top2.jpg) no-repeat center bottom;}
@@ -276,8 +284,16 @@ footer .foot_area .snslink li + li + li a {background-image:url(../img/ico_insta
 
 /* 공지사항 상세보기 */
 .bbsview_list {padding-bottom:30px;  border-top:2px solid #384d75;}
-.bbsview_list li {box-sizing:border-box; padding:0 15px; border-bottom:1px solid #ccc; font-size:14px; color:#666;}
-.bbsview_list li.bbs_title {width:100%; overflow:hidden; white-space:nowrap; text-overflow:ellipsis; height:50px; line-height:50px; font-weight:bold; font-size:16px;}
+.bbsview_list li {
+	box-sizing:border-box; 
+	padding:0 15px;
+	border-bottom:1px solid #ccc; 
+	font-size:14px; color:#666;}
+.bbsview_list li.bbs_title {
+	width:100%; overflow:hidden; 
+	white-space:nowrap; text-overflow:ellipsis;
+	 height:50px; line-height:50px; 
+	 font-weight:bold; font-size:16px;}
 .bbsview_list li.bbs_hit {height:40px; line-height:40px; float:left; width:50%;}
 .bbsview_list li.bbs_date {height:40px; line-height:40px; float:left; width:50%;}
 .bbsview_list li.bbs_content {clear:both; min-height:200px; padding:20px 15px;}
